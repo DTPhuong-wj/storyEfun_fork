@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
+
 plugins {
     id("com.google.gms.google-services")
     alias(libs.plugins.android.application)
@@ -38,6 +40,7 @@ android {
     buildFeatures {
         compose = true
     }
+
 }
 
 dependencies {
